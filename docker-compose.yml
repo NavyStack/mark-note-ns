@@ -6,7 +6,7 @@ volumes:
 
 services:
   note-mark:
-    image: navystack/note-mark:latest
+    image: navystack/mark-note:latest
     restart: unless-stopped
     volumes:
       - note-mark_data:/app/data
