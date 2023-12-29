@@ -1,6 +1,7 @@
 # mark-note-ns
 1. .env 파일을 수정후
 2. docker-compose up -d
+3. pg sql 접속 못하면 docker ps로 mark note 확인후 docker restart **
 
 ## License
 
