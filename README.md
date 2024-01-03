@@ -3,6 +3,9 @@
 2. docker-compose up -d
 3. pg sql 접속 못하면 docker ps로 mark note 확인후 ```docker restart {CONTAINER ID}``` 
 
+#기타
+*정규표현식 미스로 한국어 슬러그 미지원
+
 ## License
 
 모든 Docker 이미지와 마찬가지로, 여기에는 다른 라이선스(예: 기본 배포판의 Bash 등 및 포함된 기본 소프트웨어의 직간접적인 종속성)가 적용되는 다른 소프트웨어도 포함될 수 있습니다.<br>
