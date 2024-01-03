@@ -3,8 +3,8 @@
 2. docker-compose up -d
 3. pg sql 접속 못하면 docker ps로 mark note 확인후 ```docker restart {CONTAINER ID}``` 
 
-#기타
-*정규표현식 미스로 한국어 슬러그 미지원
+# 기타
+* 정규표현식 미스로 한국어 슬러그 미지원
 
 ## License
 
