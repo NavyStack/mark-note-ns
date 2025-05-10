@@ -1,4 +1,4 @@
-FROM node:20-bookworm as upstream-donwloader
+FROM node:24-bookworm as upstream-donwloader
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 ENV PATH="/root/.cargo/bin:${PNPM_HOME}:${PATH}"
@@ -22,7 +22,7 @@ RUN go mod download \
 COPY --from=upstream-donwloader /upstream-donwloader/backend .
 RUN CGO_ENABLED=0 go build -o /backend-build/note-mark
 
-FROM node:20-bookworm as frontend
+FROM node:24-bookworm as frontend
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 ENV PATH="/root/.cargo/bin:${PNPM_HOME}:${PATH}"
