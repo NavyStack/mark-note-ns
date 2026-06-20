@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Dockerfile
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set version based on tag
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
 
       - name: Checkout note-mark Github
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: enchant97/note-mark
           ref: ${{ env.RELEASE_VERSION }}
