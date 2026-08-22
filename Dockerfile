@@ -10,7 +10,7 @@ RUN git clone --recurse-submodules -j8 https://github.com/enchant97/note-mark.gi
     && pnpm import \
     && pnpm install binaryen@116.0.0 @codemirror/commands@6.3.3 workbox-window@7.0.0
 
-FROM golang:1.21 as backend
+FROM golang:1.27 as backend
 RUN apt update \
     && apt install -y tini
 WORKDIR /backend-build
